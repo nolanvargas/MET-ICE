@@ -64,7 +64,7 @@ export default class ArtGetter {
     // Construct a li element for each art piece
     let outputHTML = this.artData.map(
       (art) =>
-        `<li><p>Name: ${art.objectName}</p><p>ID: ${art.objectID}</p></li><hr>`
+        `<li><p>Name: ${art.objectName}</p><p>ID: ${art.objectID}</p><p>Repository: ${art.repository}</p><p>Year: ${art.accessionYear}</p></li><hr>`
     );
     // Add all li elements to the DOM
     outputListElement.innerHTML = outputHTML.join("");
